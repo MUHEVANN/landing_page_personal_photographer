@@ -1,0 +1,593 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Barlow", sans-serif;
+}
+:root {
+  --primary-col: #2c2d32;
+  --secondary-col: #292931;
+  --text-col: #dadada;
+  --kuning-col: #be9b72;
+}
+#header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("img/heor2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 80px;
+}
+
+#header .text-header {
+  color: var(--text-col);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+}
+
+#header .text-header h1 {
+  font-size: 40px;
+  line-height: 60px;
+}
+#header .text-header p {
+  color: var(--kuning-col);
+  font-weight: 700;
+}
+
+#header .icon {
+  height: 30vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+}
+#header .icon i {
+  color: var(--kuning-col);
+  font-size: 30px;
+}
+#about {
+  background-color: var(--primary-col);
+  padding: 60px 80px;
+}
+#about .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .img-about {
+  width: 800px;
+  height: 350px;
+}
+#about .img-about img {
+  width: 100%;
+  height: 100%;
+}
+#about .text-about {
+  padding-left: 50px;
+}
+#about .text-about h1 {
+  line-height: 50px;
+  color: var(--kuning-col);
+}
+#about .text-about p {
+  color: var(--text-col);
+  margin-bottom: 50px;
+}
+#about .text-about .layer {
+  height: 5px;
+  border-radius: 4px;
+  width: 50%;
+  background-color: var(--kuning-col);
+}
+#what {
+  background-color: var(--secondary-col);
+  height: auto;
+  padding: 90px 80px;
+}
+#what h1 {
+  color: var(--kuning-col);
+}
+#what .text-what1 {
+  display: flex;
+  line-height: 20px;
+}
+#what .text-what1 .text-what {
+  margin-top: 20px;
+}
+#what .text-what1 .text-what li {
+  color: var(--text-col);
+  line-height: 25px;
+}
+#what .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#what .box-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 80px;
+  margin-top: 30px;
+}
+#what .icon i {
+  color: var(--text-col);
+  font-size: 80px;
+  line-height: 100px;
+}
+#what .icon h3 {
+  color: var(--text-col);
+}
+#img {
+  height: auto;
+  padding: 40px 80px;
+  background-color: var(--primary-col);
+}
+#img h1 {
+  color: var(--kuning-col);
+  margin-bottom: 20px;
+}
+#img .baris1 {
+  display: flex;
+  justify-content: space-between;
+}
+#img .baris1 .img1 {
+  width: 32%;
+  height: 300px;
+}
+#img .baris1 .img1 img {
+  width: 100%;
+  height: 100%;
+}
+#img .baris1 .img2 {
+  width: 66%;
+  height: 300px;
+}
+#img .baris1 .img2 img {
+  width: 100%;
+  height: 100%;
+}
+#img .baris2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#img .baris2 .img345 {
+  width: 32%;
+  height: 300px;
+}
+#img .baris2 .img345 img {
+  width: 100%;
+  height: 100%;
+}
+#img .baris3 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#img .baris3 .img6 {
+  width: 66%;
+  height: 300px;
+}
+#img .baris3 .img6 img {
+  width: 100%;
+  height: 100%;
+}
+#img .baris3 .img7 {
+  width: 32%;
+  height: 300px;
+}
+#img .baris3 .img7 img {
+  width: 100%;
+  height: 100%;
+}
+#contact {
+  padding: 40px 80px;
+  background-color: var(--secondary-col);
+}
+#contact .container {
+  display: flex;
+  justify-content: space-between;
+}
+#contact .container h1 {
+  color: var(--kuning-col);
+}
+#contact .container .text-contact {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+#contact .container .text-contact form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#contact .container .text-contact form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #dadada;
+}
+#contact .container .text-contact form button {
+  padding: 10px;
+  width: 20%;
+  background-color: var(--kuning-col);
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  color: var(--primary-col);
+  margin-top: 10px;
+}
+#contact .container .text-contact .text-p {
+  margin: 20px 0;
+  color: var(--text-col);
+}
+#contact .container .img-contact {
+  width: 32%;
+  height: 300px;
+}
+#contact .container .img-contact img {
+  width: 100%;
+  height: 100%;
+}
+#instagram {
+  padding: 40px 80px;
+  background-color: var(--primary-col);
+  height: auto;
+}
+#instagram .container h3 {
+  color: var(--kuning-col);
+  margin-bottom: 20px;
+}
+#instagram .container .box-img {
+  display: flex;
+  justify-content: space-between;
+}
+#instagram .img-ig {
+  width: 23%;
+  height: 300px;
+}
+#instagram .img-ig img {
+  width: 100%;
+  height: 100%;
+}
+#footer {
+  background-color: var(--secondary-col);
+}
+#footer .container {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer .container h4 {
+  color: var(--text-col);
+}
+
+@media (max-width: 450px) {
+  #about {
+    padding: 40px;
+  }
+  #about .container {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+  #about .img-about {
+    width: 100%;
+    height: 350px;
+  }
+  #about .text-about {
+    padding-left: 0;
+  }
+  #what .text-what1 {
+    display: flex;
+    line-height: 0;
+    flex-direction: column;
+  }
+
+  #what .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #what .box-icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  #what .icon i {
+    color: var(--text-col);
+    font-size: 50px;
+    line-height: 80px;
+  }
+  #what {
+    padding: 40px;
+  }
+  #img {
+    padding: 40px;
+  }
+  #img .baris1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  #img .baris1 .img1 {
+    width: 32%;
+    height: 150px;
+  }
+  #img .baris1 .img2 {
+    width: 66%;
+    height: 150px;
+  }
+  #img .baris2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #img .baris2 .img345 {
+    width: 32%;
+    height: 150px;
+  }
+
+  #img .baris3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #img .baris3 .img6 {
+    width: 66%;
+    height: 150px;
+  }
+  #img .baris3 .img6 img {
+    width: 100%;
+    height: 100%;
+  }
+  #img .baris3 .img7 {
+    width: 32%;
+    height: 150px;
+  }
+  #img .baris3 .img7 img {
+    width: 100%;
+    height: 100%;
+  }
+  #contact {
+    padding: 40px;
+    background-color: var(--secondary-col);
+  }
+  #contact .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #contact .container .text-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #contact .container .text-contact form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  #contact .container .text-contact form input {
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #dadada;
+  }
+  #contact .container .text-contact form button {
+    padding: 10px;
+    width: 30%;
+    background-color: var(--kuning-col);
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    color: var(--primary-col);
+    margin-top: 10px;
+  }
+  #contact .container .text-contact .text-p p {
+    font-size: 13px;
+  }
+  #contact .container .img-contact {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+  }
+  #contact .container .img-contact img {
+    width: 100%;
+    height: 100%;
+  }
+  #instagram {
+    padding: 40px;
+    background-color: var(--primary-col);
+    height: auto;
+  }
+  #instagram .container h3 {
+    color: var(--kuning-col);
+    margin-bottom: 20px;
+  }
+  #instagram .container .box-img {
+    display: flex;
+    justify-content: space-between;
+  }
+  #instagram .img-ig {
+    width: 23%;
+    height: 100px;
+  }
+  #instagram .img-ig img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 670px) {
+  #about {
+    padding: 40px;
+  }
+  #about .container {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+  #about .img-about {
+    width: 100%;
+    height: 350px;
+  }
+  #about .text-about {
+    padding-left: 0;
+  }
+  #what .text-what1 {
+    display: flex;
+    line-height: 0;
+    flex-direction: column;
+  }
+
+  #what .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #what .box-icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  #what .icon i {
+    color: var(--text-col);
+    font-size: 50px;
+    line-height: 80px;
+  }
+  #what {
+    padding: 40px;
+  }
+  #img {
+    padding: 40px;
+  }
+  #img .baris1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  #img .baris1 .img1 {
+    width: 32%;
+    height: 150px;
+  }
+  #img .baris1 .img2 {
+    width: 66%;
+    height: 150px;
+  }
+  #img .baris2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #img .baris2 .img345 {
+    width: 32%;
+    height: 150px;
+  }
+
+  #img .baris3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #img .baris3 .img6 {
+    width: 66%;
+    height: 150px;
+  }
+  #img .baris3 .img6 img {
+    width: 100%;
+    height: 100%;
+  }
+  #img .baris3 .img7 {
+    width: 32%;
+    height: 150px;
+  }
+  #img .baris3 .img7 img {
+    width: 100%;
+    height: 100%;
+  }
+  #contact {
+    padding: 40px;
+    background-color: var(--secondary-col);
+  }
+  #contact .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #contact .container .text-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #contact .container .text-contact form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  #contact .container .text-contact form input {
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #dadada;
+  }
+  #contact .container .text-contact form button {
+    padding: 10px;
+    width: 30%;
+    background-color: var(--kuning-col);
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    color: var(--primary-col);
+    margin-top: 10px;
+  }
+  #contact .container .text-contact .text-p p {
+    font-size: 13px;
+  }
+  #contact .container .img-contact {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+  }
+  #contact .container .img-contact img {
+    width: 100%;
+    height: 100%;
+  }
+  #instagram {
+    padding: 40px;
+    background-color: var(--primary-col);
+    height: auto;
+  }
+  #instagram .container h3 {
+    color: var(--kuning-col);
+    margin-bottom: 20px;
+  }
+  #instagram .container .box-img {
+    display: flex;
+    justify-content: space-between;
+  }
+  #instagram .img-ig {
+    width: 23%;
+    height: 100px;
+  }
+  #instagram .img-ig img {
+    width: 100%;
+    height: 100%;
+  }
+}
